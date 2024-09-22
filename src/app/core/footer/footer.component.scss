@@ -1,0 +1,160 @@
+/* Footer base styling */
+.footer {
+    background-color: #002365 !important;
+    color: #fff;
+}
+
+.main-content {
+    padding: 60px 0;
+}
+
+.footer-title {
+    color: #FFFFFF;
+    font-family: "Avenir Next LT Pro", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+.footer-text {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-link {
+    color: #ddd;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Social icons styling */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+/* General styles for all social icons */
+.media-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    border: 1px solid;
+    margin: 0px 5px;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    font-size: 17px;
+    color: #bbb;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Avenir Next LT Pro", Sans-serif;
+}
+
+.list-name {
+    padding-left: 5px;
+    text-align: center;
+    font-family: "Avenir Next LT Pro", Sans-serif;
+}
+
+.hfe-nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    border-top: 1px solid;
+    padding-top: 15px;
+}
+
+.hfe-nav-menu-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+}
+
+.href-menu-item {
+    color: #ffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 27px;
+    padding-right: 27px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Avenir Next LT Pro", Sans-serif;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.hfe-nav-menu-2 .href-menu-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.icon-list {
+    background-color: #99101000;
+    --icon-padding: 0.7em;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    .footer-text,
+    .footer-link {
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    .social-icons {
+        text-align: left;
+        padding: 0 5px;
+    }
+    .footer-copyright  {
+       font-size: 14px;
+    
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+    .href-menu-item {
+        padding-left: 7px;
+        padding-right: 19px;
+        font-size: 14px;
+    }
+    .hfe-nav-menu-2 .href-menu-item {
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+}

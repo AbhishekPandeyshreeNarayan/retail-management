@@ -23,12 +23,6 @@ a.navbar-brand {
 
 }
 
-@media (max-width: 768px) {
-    .img-logo {
-        width: 130px;
-    }
-}
-
 /* Navbar link styles */
 .navbar.navbar-light .navbar-nav .nav-link {
     color: white;
@@ -53,103 +47,131 @@ a.navbar-brand {
     padding: 10px 20px;
     box-shadow: none;
 }
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     color: #ffff;
     background: transparent;
     border-color: #ffff;
 }
 
 /* Adjust for smaller screens */
-@media only screen and (min-width: 768px) {
-    .nav-item-mob{display: none;}
+@media only screen and (max-width: 1200px) {
+    .img-logo {
+        width: 110px;
+    }
+    .navbar.navbar-light .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+    .book-demo-btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }               
 }
+
+
+@media only screen and (min-width: 768px) {     
+    .nav-item-mob {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
-        .img-logo {
-            width: 100px;
-        }
-        .navbar {
-            background-color: transparent !important;
-           // position: absolute;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-        }
-        .navbar-toggler:focus {
-            text-decoration: none;
-            outline: 0;
-            box-shadow: none; 
-            border: none;
-        }
-    
-        
-        /* Offcanvas (Mobile Menu) styling */
-        .offcanvas {
-            position: fixed;
-            top: 0;
-            right: -300px; /* Adjust this based on your menu width */
-            height: 100%;
-            width: 300px; /* Adjust this based on your preference */
-            background-color: #ffffff; /* Menu background color */
-            transition: right 0.1s ease; /* Sliding transition */
-            //box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-            z-index: 1000; /* Ensure the menu is on top */
-        }
-    
-        .offcanvas.show {
-            right: 0; /* Slide in */
-        }
-    
-        .offcanvas-header {
-            display: flex;
-            justify-content: flex-end;
-            padding: 10px;
-        }
-    
-        /* Custom Close Button */
-        .btn-close {
-            width: 20px; /* Smaller size */
-            height: 20px; /* Smaller size */
-            background-color: transparent; /* Transparent background */
-            position: relative;
-            cursor: pointer;
-            opacity: 100%;
-        }
-    
-        .btn-close::before,
-        .btn-close::after {
-            content: '';
-            position: absolute;
-            width: 22px; /* Thickness of the cross */
-            height: 4px; /* Thickness of the cross */
-            background-color: #002365; /* Dark blue color for the cross */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg); /* First diagonal */
-        }
-    
-        .btn-close::after {
-            transform: translate(-50%, -50%) rotate(-45deg); /* Second diagonal */
-        }
-    
-        .navbar-nav {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 20px;
-            list-style-type: none;
-            height: 100%;
-        }
-    
-        .navbar-nav .nav-item-mob a {
-            color: black; /* Set text color to black */
-            text-decoration: none; /* Remove the underline */
-            font-size: 18px;
-            padding-left: 30px;
-            font-family: "Avenir Next LT Pro", Sans-serif;
-        }
-        .book-demo-btn {
-           display: none;
-        }
+    .img-logo {
+        width: 110px;
+    }
+    .navbar {
+        background-color: transparent !important;
+        // position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+    a.navbar-brand {
+        padding: 20px;
     }
     
+    .navbar-toggler-icon {
+        background-image: url(../../../assets/images/mobile-img/bars-solid.svg);
+    }
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+    .offcanvas {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100%;
+        width: 300px;
+        background-color: #ffffff;
+        transition: right 0.1s ease;
+        z-index: 1000;
+    }
+
+    .offcanvas.show {
+        right: 0;
+    }
+
+    .offcanvas-header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    /* Custom Close Button */
+    .btn-close {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        opacity: 100%;
+    }
+
+    .btn-close::before,
+    .btn-close::after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 4px;
+        background-color: #002365;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .btn-close::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        list-style-type: none;
+        height: 100%;
+    }
+
+    .navbar-nav .nav-item-mob a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        padding-left: 30px;
+        font-family: "Avenir Next LT Pro", Sans-serif;
+    }
+
+    .book-demo-btn {
+        display: none;
+    }
+}

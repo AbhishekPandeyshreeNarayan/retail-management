@@ -338,9 +338,9 @@ span.custom-bottom-border {
   margin-bottom: 30px;
 }
 
-.row {
-  flex-direction: column;
-}
+// .row {
+//   flex-direction: column;
+// }
 
 .col-3,
 .col-5 {
@@ -591,12 +591,12 @@ span.custom-bottom-border {
     padding: 10px 30px 10px 30px;
   }
 
-  img,
-  svg {
-    background:url('../../assets/images/INFOGRAPHIC.png') no-repeat center center/cover;
-    vertical-align: top;
-    width: 65px;
-  }
+  // img,
+  // svg {
+  //   background:url('../../assets/images/INFOGRAPHIC.png') no-repeat center center/cover;
+  //   vertical-align: top;
+  //   width: 65px;
+  // }
 
 
 }

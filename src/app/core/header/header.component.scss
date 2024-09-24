@@ -74,6 +74,12 @@ a.navbar-brand {
             top: 0;
             z-index: 10;
         }
+        .navbar-toggler:focus {
+            text-decoration: none;
+            outline: 0;
+            box-shadow: none; 
+            border: none;
+        }
     
         
         /* Offcanvas (Mobile Menu) styling */
